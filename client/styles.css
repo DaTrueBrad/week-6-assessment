@@ -76,8 +76,9 @@ select {
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url(./assets/minimalistForestWithRiver.jpg);
-    background-position: inherit;
+    background-image: url(./assets/cubes.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,18 +94,21 @@ main {
 h1 {
     text-align: center;
     font-size: 36px;
+    color: rgb(226, 187, 128);
 }
 
 button {
     width: 150px;
-    border-color: #E58684;
+    font-size: 24px;
+    border-color: rgb(226, 187, 128);
     background-color: white;
     border-radius: 5px;
     transition: 200ms;
 }
 
 button:hover {
-    background-color: #E58684;
+    background-color: rgb(226, 187, 128);
+    color: white;
     transition: 200ms;
 }
 
@@ -113,14 +117,26 @@ table {
     width: 500px;
     background-color: rgba(255,255,255,0.7);
 }
+#game-board {
+    border: solid 1px black;
+    margin-bottom: 2em;
+}
+
+#game-board td {
+    border: solid 1px black;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    font-size: 45px;
+  }
 
 td:hover {
-    background-color: lightcoral;
+    background-color: rgb(243, 243, 129);
     transition: 400ms;
 }
 
 #name-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 15px;
 }

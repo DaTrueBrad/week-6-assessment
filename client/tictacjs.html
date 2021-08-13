@@ -1,58 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tic-Tac-JS</title>
+    <title>Tic-Tac-Toe JS</title>
     <script src="https://code.jquery.com/jquery.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.4/jasmine.css"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <style>
-      body {
-        font-family: sans-serif;
-      }
-
-      #game-board {
-        border: solid 1px black;
-        margin-bottom: 2em;
-      }
-
-      #game-board td {
-        border: solid 1px black;
-        height: 80px;
-        width: 80px;
-        text-align: center;
-        font-size: 45px;
-      }
-    </style>
   </head>
   <body>
     <main>
-        <content>
-            <section id='name-container'><h1>
-        Tic Tac JS
-        
-      </h1><button id="start-game">Start!</button></section>
-      
+      <content>
+        <section id="name-container">
+          <h1>Tic Tac Toe JS</h1>
+          <button id="start-game">Start!</button>
+        </section>
 
-      <table id="game-board" cellpadding="0" cellspacing="0">
-        <tr>
-          <td id="cell-0"></td>
-          <td id="cell-1"></td>
-          <td id="cell-2"></td>
-        </tr>
-        <tr>
-          <td id="cell-3"></td>
-          <td id="cell-4"></td>
-          <td id="cell-5"></td>
-        </tr>
-        <tr>
-          <td id="cell-6"></td>
-          <td id="cell-7"></td>
-          <td id="cell-8"></td>
-        </tr>
-      </table>
+        <table id="game-board" cellpadding="0" cellspacing="0">
+          <tr>
+            <td id="cell-0"></td>
+            <td id="cell-1"></td>
+            <td id="cell-2"></td>
+          </tr>
+          <tr>
+            <td id="cell-3"></td>
+            <td id="cell-4"></td>
+            <td id="cell-5"></td>
+          </tr>
+          <tr>
+            <td id="cell-6"></td>
+            <td id="cell-7"></td>
+            <td id="cell-8"></td>
+          </tr>
+        </table>
       </content>
     </main>
     <script>
