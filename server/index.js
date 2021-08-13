@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express()
 
-app.get(express.static('client'))
+app.use(express.static('client'))
 app.get('/',function(req,res) {
   res.sendFile(path.join(__dirname, '../client/tictacjs.html'));
 });
